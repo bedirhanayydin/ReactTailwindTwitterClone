@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+  .w-1265 {
+    max-width: 1265px;
+  }
+} */
+
+@layer components {
+  .tweetBoxIconStyle {
+    @apply flex 
+    items-center 
+    justify-center
+    w-11 h-11 
+    rounded-full 
+    hover:bg-gray-lighest;
+  }
+  .sidebarItemStyle {
+    @apply flex items-center group-hover:bg-primary-light group-hover:text-primary-base rounded-full pl-3 pr-8 py-3;
+  }
+}
